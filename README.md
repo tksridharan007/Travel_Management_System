@@ -50,8 +50,8 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
                        'PASSWORD': 'sridharan',
                        'HOST': '<mysql-host>',
                        'PORT': '<mysql-port>',
-    }
-}
+                 }
+            }
 # save the file
 
 # 7. Run the server
@@ -63,7 +63,9 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
 
 1. Login Page -- http://127.0.0.1:8000/loginmodule/login/
 ![image](https://user-images.githubusercontent.com/82249340/213260905-f5674da7-07a2-45ba-80b2-201ba7ef9b65.png)
+
 2. Admin Page -- http://127.0.0.1:8000/admin/login/?next=/admin/
+
 ![image](https://user-images.githubusercontent.com/82249340/213261222-8199120c-8cc8-4b0a-968b-8da478fc5e3d.png)
 
 
