@@ -35,7 +35,7 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
 
 # 5. Create Database in MySQL
            
-           create database Travel_Management_System(In MongoDB);
+           create database Travel_Management_System(In MYSQL);
 
 # 6. Edit project settings
 
