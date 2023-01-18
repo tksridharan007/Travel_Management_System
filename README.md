@@ -24,6 +24,7 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
 
 # 4. Install requirements
     The some of the packages need to be intsalled before executing the project is 
+    
         1. asgiref==3.2.10
         2. Django==3.1.2
         3. mysql-connector-python==8.0.22
