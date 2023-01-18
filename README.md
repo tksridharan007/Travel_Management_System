@@ -15,10 +15,10 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
           # Make a directory
               mkdir envs
             
-            # Create virtual environment
+          # Create virtual environment
                    virtualenv ./envs/
 
-            #Activate virtual environment
+          #Activate virtual environment
                   source envs/bin/activate
 
 
@@ -43,13 +43,13 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
            # Edit Database configurations with your MySQL configurations.
            # Search for DATABASES section.
                 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Travel_Management_System',
-        'USER': '<mysql-user>',
-        'PASSWORD': 'sridharan',
-        'HOST': '<mysql-host>',
-        'PORT': '<mysql-port>',
+                  'default': {
+                       'ENGINE': 'django.db.backends.mysql',
+                       'NAME': 'Travel_Management_System',
+                       'USER': '<mysql-user>',
+                       'PASSWORD': 'sridharan',
+                       'HOST': '<mysql-host>',
+                       'PORT': '<mysql-port>',
     }
 }
 # save the file
