@@ -54,7 +54,7 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
               }
 
 # 7. save the file
-          cltr+s
+          ctrl+s
 
 # 8. Run the server
           # Make migrations
