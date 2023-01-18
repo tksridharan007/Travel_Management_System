@@ -66,6 +66,6 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
 
 2. Admin Page -- http://127.0.0.1:8000/admin/login/?next=/admin/
 
-![image](https://user-images.githubusercontent.com/82249340/213261222-8199120c-8cc8-4b0a-968b-8da478fc5e3d.png)
+<center> ![image](https://user-images.githubusercontent.com/82249340/213261222-8199120c-8cc8-4b0a-968b-8da478fc5e3d.png) <center>
 
 
