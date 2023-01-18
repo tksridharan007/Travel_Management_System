@@ -1,0 +1,77 @@
+<!-- book_Ticket.html -->
+
+{% extends 'home.html' %}
+<div class="agile-login">
+{% block content %}
+		<div class="wrapper">
+			<h2>Book tour</h2>
+			<div class="w3ls-form">
+				<form action="/BookTicketApp/bookingdataadd/" method="post">{% csrf_token %}
+                <label>Booking id</label>
+                <input type="text" name="bookingid" value="{{ randomid }}"  readonly maxlength="6">
+                <label>From</label>
+                <select name="source">
+                    <option>coimbatore</option>
+					<option>madurai</option>
+                    <option>salem</option>
+                    <option>chennai</option>
+                    <option>pollachi</option>
+                    <option>bangalore</option>
+                    <option>mysore</option>
+                    <option>delhi</option>
+                    <option>agra</option>
+                    <option>karur</option>
+                    <option>pondichery</option>
+                </select>
+                <label>To</label>
+                <select name="destination">
+                    <option>delhi</option>
+                    <option>coimbatore</option>
+                    <option>salem</option>
+                    <option>mysore</option>
+                    <option>karur</option>
+                    <option>pondicherry</option>
+                    <option>agra</option>
+                    <option>pollachi</option>
+                    <option>Delhi</option>
+                    <option>Palani</option>
+                    <option>chennai</option>
+                    <option>agra</option>
+                </select>
+                <p style="color: red">{{ request.session.error3 }}</p>
+                <label>Package</label>
+                <select name="package">
+                {% for pack in packs %}
+                    <option value='{{ pack.pname }}'>{{ pack.pname }}</option>
+
+                {% endfor %}
+                </select>
+
+                    <label>Departure date</label>
+                    <input id="datefield" type="date" name="date" onload="setMinDate()">
+                    <script>
+                        setMinDate();
+                        function setMinDate(){
+                            var today = new Date();
+                            var dd = today.getDate();
+                            var mm = today.getMonth()+1;
+                            var yyyy = today.getFullYear();
+                            if(dd<10){
+                                dd='0'+dd
+                            }
+                            if(mm<10){
+                                mm='0'+mm
+                            }
+                            today = yyyy+'-'+mm+'-'+dd;
+                            document.getElementById("datefield").setAttribute("min", today);
+                        }
+                    </script>
+                    <label>No of person</label>
+			    <input type="text" name="person" placeholder="" id="from" required>
+                <input type="submit" value="book" />
+				</form>
+            </div>
+        </div>
+		<br>
+{% endblock %}
+</div>
