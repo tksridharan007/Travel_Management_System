@@ -59,7 +59,7 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
               python manage.py runserver
                     Try opening http://127.0.0.1:8000/ in the browser. 
 
-# 9. URLs
+# 8. URLs
 
 1. Login Page -- http://127.0.0.1:8000/loginmodule/login/
 ![image](https://user-images.githubusercontent.com/82249340/213260905-f5674da7-07a2-45ba-80b2-201ba7ef9b65.png)
