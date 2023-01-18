@@ -4,43 +4,44 @@ A travel management system is a software product that manages all components of 
 # Installation
 # Prerequisites
 # 1. Install Python
-Install python-3.3.2 and python-pip. Follow the steps from the below reference document based on your Operating System. Reference: https://docs.python-guide.org/starting/installation/
+         Install python-3.3.2 and python-pip. Follow the steps from the below reference document based on your Operating System. Reference: https://docs.python-guide.org/starting/installation/
 
 # 2. Install MySQL
-Install mysql-8.0.15. Follow the steps form the below reference document based on your Operating System. Reference: https://dev.mysql.com/doc/refman/5.5/en/
+          Install mysql-8.0.15. Follow the steps form the below reference document based on your Operating System. Reference: https://dev.mysql.com/doc/refman/5.5/en/
 
 # 3. Setup virtual environment
-# Install virtual environment
-sudo pip install virtualenv
+            # Install virtual environment
+            sudo pip install virtualenv
+            # Make a directory
+            mkdir envs
+            
+            # Create virtual environment
+                   virtualenv ./envs/
 
-#Make a directory
-mkdir envs
-
-#Create virtual environment
-virtualenv ./envs/
-
-#Activate virtual environment
-source envs/bin/activate
+              #Activate virtual environment
+                  source envs/bin/activate
 
 
 # 4. Install requirements
 
-asgiref==3.2.10
-Django==3.1.2
-mysql-connector-python==8.0.22
-mysqlclient==2.0.1
-protobuf==3.13.0
-pytz==2020.1
-six==1.15.0
-sqlparse==0.4.1
+        asgiref==3.2.10
+        Django==3.1.2
+        mysql-connector-python==8.0.22
+        mysqlclient==2.0.1
+        protobuf==3.13.0
+        pytz==2020.1
+        six==1.15.0
+        sqlparse==0.4.1
 
 # 5. Create Database in MySQL
-create database Travel_Management_System;
+           
+           create database Travel_Management_System;
 
-# 6.. Edit project settings
-# open settings file
-# Edit Database configurations with your MySQL configurations.
-# Search for DATABASES section.
+# 6. Edit project settings
+
+           # open settings file
+           # Edit Database configurations with your MySQL configurations.
+           # Search for DATABASES section.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
