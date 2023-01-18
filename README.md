@@ -45,11 +45,11 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
                 DATABASES = {
                   'default': {
                        'ENGINE': 'django.db.backends.mysql',
-                       'NAME': 'Travel_Management_System',
-                       'USER': '<mysql-user>',
-                       'PASSWORD': 'sridharan',
-                       'HOST': '<mysql-host>',
-                       'PORT': '<mysql-port>',
+                       'NAME': 'travel_management_system',
+		   'USER': 'root',
+		   'PASSWORD': 'sridharan',
+		   'HOST': 'localhost',
+		   'PORT': '3306',
                  }
             }
            # save the file
