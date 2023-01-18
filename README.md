@@ -52,7 +52,7 @@ Install mysql-8.0.15. Follow the steps form the below reference document based o
                        'PORT': '<mysql-port>',
                  }
             }
-# save the file
+       # save the file
 
 # 7. Run the server
           # Make migrations
